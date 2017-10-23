@@ -1,5 +1,5 @@
 //
-//  DynamicLinkedListModelModelViewController.c
+//  DynamicLinkedListModelViewController.c
 //  DynamicLinkedList
 //
 //  Created by Mewlan Musajan on 10/23/17.
