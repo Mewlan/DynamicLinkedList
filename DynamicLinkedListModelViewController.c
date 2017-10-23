@@ -12,7 +12,7 @@
 #define LEN sizeof(struct Student)
 
 void model();
-void view(struct Student *head, struct Student *ptr1, struct Student *ptr2, struct Student *retrieve);
+void view(struct Student *head, struct Student *ptr1, struct Student *ptr2);
 void outPutViewController(struct Student *head);
 struct Student * dynamicLinkedListAllocationController(struct Student *ptr1, struct Student *ptr2, struct Student *head);
 
@@ -33,14 +33,14 @@ int main(int argc, char const *argv[])
 
 void model()
 {
-	struct Student *head, *ptr1, *ptr2, *retrieve;
+	struct Student *head, *ptr1, *ptr2;
 	n = 0;
 	ptr1 = ptr2 = (struct Student *) malloc(LEN);
 	head = NULL;
-	view(head, ptr1, ptr2, retrieve);
+	view(head, ptr1, ptr2);
 }
 
-void view(struct Student *head, struct Student *ptr1, struct Student *ptr2, struct Student *retrieve)
+void view(struct Student *head, struct Student *ptr1, struct Student *ptr2)
 {
 	outPutViewController(dynamicLinkedListAllocationController(ptr1, ptr2, head));
 }
